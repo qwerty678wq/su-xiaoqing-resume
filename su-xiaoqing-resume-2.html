@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#f080a0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="苏小青简历">
+    <meta name="description" content="苏小青 - 新闻传播专业 | 内容创作者 | 综艺编导方向 个人简历">
+    <title>苏小青 | 个人简历</title>
+    <!-- Tailwind CSS (国内可达多源 + 内联兜底) -->
+    <script>
+        // 依次尝试多个 CDN,首个加载成功即用
+        (function () {
+            var cdns = [
+                'https://lf26-cdn-tos.bytecdnpkg.com/npm/tailwindcss@2.2.19/dist/tailwind.min.css',
+                'https://cdn.bootcdn.net/ajax/libs/tailwindcss/2.2.19/tailwind.min.css',
+                'https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css'
+            ];
+            var i = 0;
+            function loadNext() {
+                if (i >= cdns.length) return;
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = cdns[i++];
+                link.onerror = loadNext;
+                document.head.appendChild(link);
+            }
+            loadNext();
+        })();
+    </script>
+    <!-- Font Awesome (国内可达多源) -->
+    <script>
+        (function () {
+            var fas = [
+                'https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+                'https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css'
+            ];
+            var i = 0;
+            function loadNext() {
+                if (i >= fas.length) return;
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = fas[i++];
+                link.onerror = loadNext;
+                document.head.appendChild(link);
+            }
+            loadNext();
+        })();
+    </script>
+    <!-- 内联补丁 CSS:覆盖自定义颜色 + 任意值类(即使 CDN 全失败也有基础样式) -->
+    <style>
+        :root {
+            --primary: #f080a0;
+            --secondary: #fce4ec;
+            --neutral: #fef7f9;
+            --dark: #4a373e;
+        }
+        html { -webkit-text-size-adjust: 100%; }
+        body { margin: 0; font-family: Inter, system-ui, -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; background: var(--neutral); color: var(--dark); }
+        img { max-width: 100%; height: auto; display: block; }
+        a { color: inherit; text-decoration: none; }
+
+        /* ===== 自定义颜色类(等价于原 Tailwind config) ===== */
+        .text-primary { color: var(--primary) !important; }
+        .bg-primary { background-color: var(--primary) !important; }
+        .border-primary { border-color: var(--primary) !important; }
+        .bg-secondary { background-color: var(--secondary) !important; }
+        .border-secondary { border-color: var(--secondary) !important; }
+        .bg-neutral { background-color: var(--neutral) !important; }
+        .text-dark { color: var(--dark) !important; }
+        .bg-dark { background-color: var(--dark) !important; }
+
+        /* 带 opacity 的颜色(rgba) */
+        .bg-primary\/10 { background-color: rgba(240, 128, 160, 0.10) !important; }
+        .bg-primary\/30 { background-color: rgba(240, 128, 160, 0.30) !important; }
+        .bg-primary\/90 { background-color: rgba(240, 128, 160, 0.90) !important; }
+        .border-primary\/30 { border-color: rgba(240, 128, 160, 0.30) !important; }
+        .text-dark\/70 { color: rgba(74, 55, 62, 0.70) !important; }
+        .text-dark\/60 { color: rgba(74, 55, 62, 0.60) !important; }
+        .text-white\/60 { color: rgba(255, 255, 255, 0.60) !important; }
+        .bg-black\/90 { background-color: rgba(0, 0, 0, 0.90) !important; }
+        .bg-black\/50 { background-color: rgba(0, 0, 0, 0.50) !important; }
+        .bg-gray-100 { background-color: #f3f4f6 !important; }
+        .bg-gray-200 { background-color: #e5e7eb !important; }
+        .border-gray-200 { border-color: #e5e7eb !important; }
+        .border-gray-100 { border-color: #f3f4f6 !important; }
+        .ring-primary\/30 { box-shadow: 0 0 0 2px rgba(240, 128, 160, 0.30) !important; }
+
+        /* 任意值类 */
+        .min-h-\[2em\] { min-height: 2em; }
+        .max-h-\[85vh\] { max-height: 85vh; }
+        .hover\:scale-\[1\.02\]:hover { transform: scale(1.02); }
+
+        /* 暗色模式补丁 */
+        html.dark body { background-color: #2a1f24 !important; color: #fce4ec; }
+        html.dark .bg-white { background-color: #3a2a30 !important; color: #fce4ec; }
+        html.dark .bg-neutral { background-color: #321f25 !important; color: #fce4ec; }
+        html.dark .text-dark { color: #fce4ec !important; }
+        html.dark .text-dark\/70 { color: rgba(252, 228, 236, 0.75) !important; }
+        html.dark .text-dark\/60 { color: rgba(252, 228, 236, 0.65) !important; }
+        html.dark .border-secondary { border-color: #5a3a44 !important; }
+        html.dark .bg-gray-100 { background-color: #4a3a40 !important; }
+        html.dark .bg-gray-200 { background-color: #4a3a40 !important; }
+        html.dark nav.bg-white { background-color: rgba(58, 42, 48, 0.95) !important; }
+
+        /* ===== 基础布局类(CDN 全失败时的兜底) ===== */
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding-left: 1rem; padding-right: 1rem; }
+        @media (min-width: 768px) { .container { padding-left: 2rem; padding-right: 2rem; } }
+        .mx-auto { margin-left: auto; margin-right: auto; }
+        .hidden { display: none !important; }
+        .flex { display: flex; }
+        .grid { display: grid; }
+        .block { display: block; }
+        .inline-flex { display: inline-flex; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+        .items-start { align-items: flex-start; }
+        .flex-col { flex-direction: column; }
+        .flex-wrap { flex-wrap: wrap; }
+        .text-center { text-align: center; }
+        .text-left { text-align: left; }
+        .text-right { text-align: right; }
+        .relative { position: relative; }
+        .absolute { position: absolute; }
+        .fixed { position: fixed; }
+        .w-full { width: 100%; }
+        .h-full { height: 100%; }
+        .w-1\/2 { width: 50%; }
+        .w-1\/3 { width: 33.3333%; }
+        .w-2\/3 { width: 66.6667%; }
+        .w-12 { width: 3rem; }
+        .h-12 { height: 3rem; }
+        .w-10 { width: 2.5rem; }
+        .h-10 { height: 2.5rem; }
+        .w-20 { width: 5rem; }
+        .h-1 { height: 0.25rem; }
+        .h-3 { height: 0.75rem; }
+        .w-56 { width: 14rem; }
+        .h-56 { height: 14rem; }
+        .max-w-2xl { max-width: 42rem; }
+        .max-w-3xl { max-width: 48rem; }
+        .max-w-full { max-width: 100%; }
+        .min-h-screen { min-height: 100vh; }
+        .pt-20 { padding-top: 5rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+        .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+        .py-16 { padding-top: 4rem; padding-bottom: 4rem; }
+        .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+        .px-8 { padding-left: 2rem; padding-right: 2rem; }
+        .p-4 { padding: 1rem; }
+        .p-6 { padding: 1.5rem; }
+        .mb-2 { margin-bottom: 0.5rem; }
+        .mb-3 { margin-bottom: 0.75rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .mb-6 { margin-bottom: 1.5rem; }
+        .mb-8 { margin-bottom: 2rem; }
+        .mb-12 { margin-bottom: 3rem; }
+        .mb-16 { margin-bottom: 4rem; }
+        .mt-2 { margin-top: 0.5rem; }
+        .mt-4 { margin-top: 1rem; }
+        .mt-10 { margin-top: 2.5rem; }
+        .mt-12 { margin-top: 3rem; }
+        .mt-16 { margin-top: 4rem; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .gap-12 { gap: 3rem; }
+        .rounded { border-radius: 0.25rem; }
+        .rounded-full { border-radius: 9999px; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .rounded-2xl { border-radius: 1rem; }
+        .rounded-b-2xl { border-bottom-left-radius: 1rem; border-bottom-right-radius: 1rem; }
+        .border { border-width: 1px; }
+        .border-2 { border-width: 2px; }
+        .border-4 { border-width: 4px; }
+        .border-8 { border-width: 8px; }
+        .border-l-2 { border-left-width: 2px; }
+        .border-l-4 { border-left-width: 4px; }
+        .border-b { border-bottom-width: 1px; }
+        .shadow-sm { box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+        .shadow-md { box-shadow: 0 4px 6px rgba(0,0,0,0.07); }
+        .shadow-lg { box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .shadow-xl { box-shadow: 0 20px 25px rgba(0,0,0,0.12); }
+        .text-sm { font-size: 0.875rem; }
+        .text-lg { font-size: 1.125rem; }
+        .text-xl { font-size: 1.25rem; }
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-4xl { font-size: 2.25rem; }
+        .text-6xl { font-size: 3.75rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .font-bold { font-weight: 700; }
+        .font-semibold { font-weight: 600; }
+        .leading-relaxed { line-height: 1.75; }
+        .text-white { color: #fff; }
+        .text-center { text-align: center; }
+        .cursor-pointer { cursor: pointer; }
+        .object-cover { object-fit: cover; }
+        .object-contain { object-fit: contain; }
+        .overflow-hidden { overflow: hidden; }
+        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+        .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        .space-y-4 > * + * { margin-top: 1rem; }
+        .space-y-6 > * + * { margin-top: 1.5rem; }
+        .break-all { word-break: break-all; }
+        .resize-none { resize: none; }
+        .outline-none { outline: none; }
+        .transition-all { transition: all 0.3s ease; }
+        .transition-colors { transition: color 0.3s, background-color 0.3s; }
+        .z-40 { z-index: 40; }
+        .z-50 { z-index: 50; }
+        .top-0 { top: 0; }
+        .top-full { top: 100%; }
+        .top-4 { top: 1rem; }
+        .bottom-6 { bottom: 1.5rem; }
+        .right-4 { right: 1rem; }
+        .right-6 { right: 1.5rem; }
+        .left-0 { left: 0; }
+        .left-2 { left: 0.5rem; }
+        .left-6 { left: 1.5rem; }
+        .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+        .opacity-0 { opacity: 0; }
+        .pointer-events-none { pointer-events: none; }
+        .-translate-y-1\/2 { transform: translateY(-50%); }
+        .-translate-x-1\/2 { transform: translateX(-50%); }
+        .-bottom-4 { bottom: -1rem; }
+        .-right-4 { right: -1rem; }
+        .pl-8 { padding-left: 2rem; }
+        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+        .min-w-\[44px\] { min-width: 44px; }
+        .min-h-\[44px\] { min-height: 44px; }
+
+        /* 响应式断点 */
+        @media (min-width: 640px) {
+            .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .sm\:h-64 { height: 16rem; }
+        }
+        @media (min-width: 768px) {
+            .md\:flex { display: flex; }
+            .md\:hidden { display: none !important; }
+            .md\:flex-row { flex-direction: row; }
+            .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+            .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+            .md\:w-1\/3 { width: 33.3333%; }
+            .md\:w-2\/3 { width: 66.6667%; }
+            .md\:w-80 { width: 20rem; }
+            .md\:h-80 { height: 20rem; }
+            .md\:h-72 { height: 18rem; }
+            .md\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+            .md\:py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+            .md\:text-2xl { font-size: 1.5rem; }
+            .md\:text-4xl { font-size: 2.25rem; }
+            .md\:text-6xl { font-size: 3.75rem; }
+            .md\:text-left { text-align: left; }
+            .md\:pt-24 { padding-top: 6rem; }
+            .md\:left-6 { left: 1.5rem; }
+            .md\:right-6 { right: 1.5rem; }
+            .md\:gap-12 { gap: 3rem; }
+            .md\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+        }
+        @media (min-width: 1024px) {
+            .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+
+        /* hover 类(基础兜底) */
+        .hover\:text-primary:hover { color: var(--primary) !important; }
+        .hover\:bg-primary:hover { background-color: var(--primary) !important; }
+        .hover\:bg-primary\/10:hover { background-color: rgba(240, 128, 160, 0.10) !important; }
+        .hover\:bg-primary\/90:hover { background-color: rgba(240, 128, 160, 0.90) !important; }
+        .hover\:text-white:hover { color: #fff !important; }
+        .hover\:shadow-lg:hover { box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .hover\:shadow-xl:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.12); }
+        .hover\:-translate-y-1:hover { transform: translateY(-0.25rem); }
+        .hover\:scale-105:hover { transform: scale(1.05); }
+        .hover\:scale-110:hover { transform: scale(1.1); }
+        .focus\:border-primary:focus { border-color: var(--primary) !important; }
+        .focus\:ring-2:focus { box-shadow: 0 0 0 2px rgba(240, 128, 160, 0.30); }
+
+        /* 移动端触摸友好 */
+        @media (max-width: 768px) {
+            nav a, button {
+                min-height: 44px;
+                min-width: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+            .gallery-item img { height: 220px !important; }
+        }
+
+        /* 模态框打开禁止背景滚动 */
+        body.no-scroll { overflow: hidden; }
+        img { -webkit-user-drag: none; user-drag: none; }
+
+        /* ===== 动画与组件样式(从原 Tailwind utilities 迁移) ===== */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes progress { from { width: 0; } }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+        @keyframes pulseHeart { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.15); } }
+        @keyframes bounceIn { 0% { transform: scale(0.3); opacity: 0; } 50% { transform: scale(1.05); } 100% { transform: scale(1); opacity: 1; } }
+        @keyframes fall { 0% { transform: translateY(-10vh) rotate(0deg); opacity: 0.8; } 100% { transform: translateY(110vh) rotate(360deg); opacity: 0; } }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        .animate-fade-in { animation: fadeIn 0.8s ease-out forwards; }
+        .animate-slide-up { animation: slideUp 0.8s ease-out forwards; }
+        .animate-progress { animation: progress 1.5s ease-out forwards; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-pulse-heart { animation: pulseHeart 1.5s ease-in-out infinite; }
+        .animate-bounce-in { animation: bounceIn 0.6s ease-out forwards; }
+
+        /* 渐入前隐藏(关键!不加这句,scroll-hidden 元素会一直不可见) */
+        .scroll-hidden {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        /* 时间线圆点 */
+        .timeline-item { position: relative; }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px rgba(240, 128, 160, 0.30);
+        }
+
+        /* 飘落爱心 */
+        .falling-heart {
+            position: fixed;
+            top: -30px;
+            pointer-events: none;
+            z-index: 5;
+            animation: fall linear forwards;
+            user-select: none;
+        }
+
+        /* 打字光标 */
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1em;
+            background-color: var(--primary);
+            margin-left: 4px;
+            vertical-align: middle;
+            animation: blink 0.8s step-end infinite;
+        }
+
+        /* 滚动进度条 */
+        #scrollProgress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #f080a0, #ff9eb5);
+            width: 0%;
+            z-index: 60;
+            transition: width 0.1s ease-out;
+        }
+
+        /* 移动端菜单动画 */
+        #mobileMenu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        #mobileMenu.open {
+            max-height: 500px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        /* 卡片3D倾斜 */
+        .tilt-card {
+            transition: transform 0.25s ease;
+            transform-style: preserve-3d;
+        }
+
+        /* flex gap 兜底(老浏览器) */
+        .flex { gap: 0; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-4 { gap: 1rem; }
+        .gap-6 { gap: 1.5rem; }
+        .gap-8 { gap: 2rem; }
+        .gap-12 { gap: 3rem; }
+    </style>
+</head>
+<body class="bg-neutral text-dark">
+    <!-- 滚动进度条 -->
+    <div id="scrollProgress"></div>
+
+    <!-- 飘落爱心容器 -->
+    <div id="heartsContainer" aria-hidden="true"></div>
+
+    <!-- 导航栏 -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 py-4">
+        <div class="container mx-auto px-4 md:px-8 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-primary">Su Xiaoqing</a>
+            <div class="hidden md:flex gap-8">
+                <a href="#home" class="hover:text-primary transition-colors">首页</a>
+                <a href="#about" class="hover:text-primary transition-colors">关于</a>
+                <a href="#experience" class="hover:text-primary transition-colors">经历</a>
+                <a href="#skills" class="hover:text-primary transition-colors">技能</a>
+                <a href="#gallery" class="hover:text-primary transition-colors">生活</a>
+                <a href="#contact" class="hover:text-primary transition-colors">联系</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <!-- 主题切换 -->
+                <button id="themeBtn" class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-primary/10 transition-colors" aria-label="切换主题">
+                    <i class="fas fa-moon text-lg"></i>
+                </button>
+                <!-- 移动菜单按钮 -->
+                <button id="menuBtn" class="md:hidden w-10 h-10 flex items-center justify-center text-dark" aria-label="菜单">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="md:hidden absolute top-full left-0 w-full bg-white shadow-lg px-4 rounded-b-2xl">
+            <div class="flex flex-col gap-2">
+                <a href="#home" class="py-3 hover:text-primary transition-colors border-b border-gray-100">首页</a>
+                <a href="#about" class="py-3 hover:text-primary transition-colors border-b border-gray-100">关于</a>
+                <a href="#experience" class="py-3 hover:text-primary transition-colors border-b border-gray-100">经历</a>
+                <a href="#skills" class="py-3 hover:text-primary transition-colors border-b border-gray-100">技能</a>
+                <a href="#gallery" class="py-3 hover:text-primary transition-colors border-b border-gray-100">生活</a>
+                <a href="#contact" class="py-3 hover:text-primary transition-colors">联系</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区 -->
+    <section id="home" class="min-h-screen flex items-center pt-20 md:pt-24">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                <div class="w-full md:w-1/3 flex justify-center">
+                    <div class="relative">
+                        <div class="w-56 h-56 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-secondary shadow-xl animate-float">
+                            <!-- 头像 -->
+                            <img src="https://aka.doubaocdn.com/s/Gu4jmmTcLq?alice_filename=IMG_4833.PNG" alt="苏小青" class="w-full h-full object-cover" style="object-position: 5% 20%;">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-primary text-white px-4 py-2 rounded-full shadow-lg animate-pulse-heart">
+                            <i class="fas fa-heart mr-2"></i>求职中
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3 text-center md:text-left">
+                    <h1 class="text-3xl md:text-6xl font-bold mb-4 text-dark">
+                        你好，我是 <span class="text-primary">苏小青</span>
+                    </h1>
+                    <p class="text-lg md:text-2xl text-dark/70 mb-6 min-h-[2em]">
+                        <span id="typingText"></span><span class="typing-cursor"></span>
+                    </p>
+                    <p class="text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
+                        熟悉网生内容生产与新媒体运营逻辑，擅长综艺文案、短视频脚本与热点策划。
+                        曾参与芒果TV《披荆斩棘的哥哥》实习组导演工作，
+                        期待在文娱内容领域创造更多价值。
+                    </p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-6 md:px-8 py-3 rounded-full transition-all hover:shadow-lg hover:scale-105">
+                            <i class="fas fa-paper-plane mr-2"></i>联系我
+                        </a>
+                        <button id="downloadBtn" class="border-2 border-primary text-primary hover:bg-primary/10 px-6 md:px-8 py-3 rounded-full transition-all hover:shadow-lg">
+                            <i class="fas fa-download mr-2"></i>下载简历
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16 scroll-hidden">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">关于我</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div class="w-full md:w-1/2 scroll-hidden">
+                    <img src="https://aka.doubaocdn.com/s/tnq1xmKOAF?alice_filename=1e95f97a4d967bb939bfddbd7a5086.JPG" alt="关于我" class="rounded-2xl shadow-xl w-full">
+                </div>
+                <div class="w-full md:w-1/2 scroll-hidden">
+                    <h3 class="text-xl md:text-2xl font-bold mb-4">热爱内容，专注文娱</h3>
+                    <p class="mb-4 leading-relaxed">
+                        我是上海体育大学新闻传播学专业的本科生，来自湖南岳阳。
+                        从小对文娱内容充满热情，大学期间系统学习了新闻采访、新媒体运营、影视制作等相关知识，
+                        具备扎实的内容创作基础。
+                    </p>
+                    <p class="mb-6 leading-relaxed">
+                        我擅长捕捉热点，熟悉各大新媒体平台的内容调性，能够快速产出符合用户喜好的内容。
+                        在实习期间，我参与了头部综艺的制作工作，深入了解了综艺节目的制作流程，
+                        锻炼了自己的编导思维和团队协作能力。
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p><span class="font-semibold">姓名：</span>苏小青</p>
+                            <p><span class="font-semibold">籍贯：</span>湖南岳阳</p>
+                            <p><span class="font-semibold">学校：</span>上海体育大学</p>
+                        </div>
+                        <div>
+                            <p><span class="font-semibold">专业：</span>新闻传播学</p>
+                            <p><span class="font-semibold">英语：</span>雅思6.5</p>
+                            <p><span class="font-semibold">爱好：</span>摄影、旅行</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 经历 -->
+    <section id="experience" class="py-16 md:py-20 bg-neutral">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16 scroll-hidden">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">我的经历</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- 教育背景 -->
+                <div class="scroll-hidden">
+                    <h3 class="text-xl md:text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-graduation-cap text-primary mr-3"></i>教育背景
+                    </h3>
+                    <div class="relative pl-8 border-l-2 border-primary/30">
+                        <div class="timeline-item relative mb-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 tilt-card">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg">上海体育大学</h4>
+                                    <span class="text-primary text-sm bg-primary/10 px-3 py-1 rounded-full">2025-至今</span>
+                                </div>
+                                <p class="text-dark/70 mb-3">新闻传播学（新闻系） 本科</p>
+                                <p class="text-sm leading-relaxed">
+                                    核心课程：新闻采访与写作、传播学概论、新媒体概论、影视基础、体育新闻概论。
+                                    具备新闻采编、热点选题、文案创作、内容策划专业基础，熟悉网生内容生产与新媒体运营逻辑。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 实习经历 -->
+                <div class="scroll-hidden">
+                    <h3 class="text-xl md:text-2xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-briefcase text-primary mr-3"></i>实习经历
+                    </h3>
+                    <div class="relative pl-8 border-l-2 border-primary/30">
+                        <!-- 芒果的实习 -->
+                        <div class="timeline-item relative mb-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 border-l-4 border-primary tilt-card">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg">芒果TV</h4>
+                                    <span class="text-primary text-sm bg-primary/10 px-3 py-1 rounded-full">2026</span>
+                                </div>
+                                <p class="text-dark/70 mb-3">《披荆斩棘的哥哥》实习组导演</p>
+                                <p class="text-sm leading-relaxed">
+                                    参与节目前期策划、嘉宾对接与内容素材整理工作，协助完成节目脚本撰写与现场执行，
+                                    深入了解头部综艺的制作全流程，锻炼了编导思维与多任务处理能力。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 校园新媒体 -->
+                        <div class="timeline-item relative mb-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 tilt-card">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg">院系新媒体运营</h4>
+                                    <span class="text-dark/60 text-sm bg-gray-100 px-3 py-1 rounded-full">2025</span>
+                                </div>
+                                <p class="text-sm leading-relaxed">
+                                    负责院系新媒体平台日常内容产出，参与选题策划、文案撰写、推文编辑与发布运营，
+                                    熟悉新媒体从选题、撰稿到排版发布全流程，产出多篇高阅读量推文。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- 专业实训 -->
+                        <div class="timeline-item relative mb-8">
+                            <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all hover:-translate-y-1 tilt-card">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-lg">新闻专业实训</h4>
+                                    <span class="text-dark/60 text-sm bg-gray-100 px-3 py-1 rounded-full">2025</span>
+                                </div>
+                                <p class="text-sm leading-relaxed">
+                                    参与专业新闻采访、专题报道实训，独立完成采访提纲设计、人物沟通、素材整理、新闻稿件撰写，
+                                    具备基础编导思维和内容采编能力。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 荣誉奖项 -->
+            <div class="mt-12 md:mt-16 scroll-hidden">
+                <h3 class="text-xl md:text-2xl font-bold mb-8 text-center flex items-center justify-center">
+                    <i class="fas fa-award text-primary mr-3"></i>荣誉奖项
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl transition-all hover:-translate-y-1 tilt-card" data-count="1">
+                        <i class="fas fa-trophy text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold">高招科历史写作大赛</h4>
+                        <p class="text-sm text-dark/70">全国一等奖</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl transition-all hover:-translate-y-1 tilt-card" data-count="3">
+                        <i class="fas fa-trophy text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold">创新英文大赛</h4>
+                        <p class="text-sm text-dark/70">全国三等奖</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl transition-all hover:-translate-y-1 tilt-card" data-count="2">
+                        <i class="fas fa-trophy text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold">大学生英语大赛</h4>
+                        <p class="text-sm text-dark/70">二等奖</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md text-center hover:shadow-xl transition-all hover:-translate-y-1 tilt-card" data-count="1">
+                        <i class="fas fa-user-check text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold">优秀共青团员</h4>
+                        <p class="text-sm text-dark/70">校级荣誉</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能 -->
+    <section id="skills" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16 scroll-hidden">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">专业技能</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="scroll-hidden">
+                    <div class="space-y-6">
+                        <!-- 文案写作 -->
+                        <div class="skill-bar" data-width="95">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">文案写作</span>
+                                <span class="skill-percent">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <!-- 新媒体运营 -->
+                        <div class="skill-bar" data-width="90">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">新媒体运营</span>
+                                <span class="skill-percent">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <!-- 视频剪辑 -->
+                        <div class="skill-bar" data-width="80">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">视频剪辑</span>
+                                <span class="skill-percent">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <!-- 英语能力 -->
+                        <div class="skill-bar" data-width="92">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-semibold">英语能力</span>
+                                <span class="skill-percent">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-hidden">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-neutral p-6 rounded-2xl hover:shadow-lg transition-all tilt-card">
+                            <i class="fas fa-pen-fancy text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">内容创作</h4>
+                            <p class="text-sm">综艺文案、短视频脚本、采访提纲、热点稿</p>
+                        </div>
+                        <div class="bg-neutral p-6 rounded-2xl hover:shadow-lg transition-all tilt-card">
+                            <i class="fas fa-hashtag text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">热点策划</h4>
+                            <p class="text-sm">熟悉平台调性，懂流量思维，快速抓热点</p>
+                        </div>
+                        <div class="bg-neutral p-6 rounded-2xl hover:shadow-lg transition-all tilt-card">
+                            <i class="fas fa-file-powerpoint text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">办公技能</h4>
+                            <p class="text-sm">Word/PPT排版，基础图片处理</p>
+                        </div>
+                        <div class="bg-neutral p-6 rounded-2xl hover:shadow-lg transition-all tilt-card">
+                            <i class="fas fa-users text-primary text-2xl mb-3"></i>
+                            <h4 class="font-bold mb-2">团队协作</h4>
+                            <p class="text-sm">高效沟通，多任务处理，快速适配团队</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 生活画廊 -->
+    <section id="gallery" class="py-16 md:py-20 bg-neutral">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16 scroll-hidden">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">生活碎片</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+                <p class="mt-4 text-dark/70">点击图片查看大图 · 左右滑动切换</p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+                <div class="gallery-item scroll-hidden" data-index="0">
+                    <img src="https://aka.doubaocdn.com/s/tnq1xmKOAF?alice_filename=1e95f97a4d967bb939bfddbd7a5086.JPG" alt="生活照" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+                <div class="gallery-item scroll-hidden" data-index="1">
+                    <img src="https://aka.doubaocdn.com/s/hP2IS7MkuA?alice_filename=7b62a82216217c2282b0461f6d4ad6.JPG" alt="生活照" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+                <div class="gallery-item scroll-hidden" data-index="2">
+                    <img src="https://aka.doubaocdn.com/s/1jwAzXUV10?alice_filename=23f141e9082dc092a71acc6d2cde8c.JPG" alt="生活照" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+                <div class="gallery-item scroll-hidden" data-index="3">
+                    <img src="https://aka.doubaocdn.com/s/0wwGmRiVVG?alice_filename=87d6beed40901e1c4c6c2079ebb64c.JPG" alt="生活照" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+                <div class="gallery-item scroll-hidden" data-index="4">
+                    <img src="https://aka.doubaocdn.com/s/c8b0VgtRK1?alice_filename=515d9171b06fd3435a7854257.JPG" alt="生活照" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+                <div class="gallery-item scroll-hidden" data-index="5">
+                    <img src="https://aka.doubaocdn.com/s/Gu4jmmTcLq?alice_filename=IMG_4833.PNG" alt="简历" class="w-full h-44 sm:h-64 md:h-72 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all cursor-pointer hover:scale-[1.02]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 图片模态框 (支持左右切换) -->
+    <div id="modal" class="fixed inset-0 bg-black/90 z-50 hidden items-center justify-center p-4">
+        <span id="closeModal" class="absolute top-4 right-4 text-white text-3xl cursor-pointer hover:text-primary w-12 h-12 flex items-center justify-center" aria-label="关闭">
+            <i class="fas fa-times"></i>
+        </span>
+        <span id="prevBtn" class="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-primary w-12 h-12 flex items-center justify-center" aria-label="上一张">
+            <i class="fas fa-chevron-left"></i>
+        </span>
+        <img id="modalImg" src="" alt="大图" class="max-w-full max-h-[85vh] rounded-2xl object-contain">
+        <span id="nextBtn" class="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 text-white text-3xl cursor-pointer hover:text-primary w-12 h-12 flex items-center justify-center" aria-label="下一张">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <span id="imgCounter" class="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm bg-black/50 px-3 py-1 rounded-full"></span>
+    </div>
+
+    <!-- 联系我 -->
+    <section id="contact" class="py-16 md:py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center mb-12 md:mb-16 scroll-hidden">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">联系我</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto scroll-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <a href="mailto:ikun20070426@qq.com" class="p-6 bg-neutral rounded-2xl hover:shadow-lg transition-all tilt-card block">
+                        <i class="fas fa-envelope text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">邮箱</h4>
+                        <p class="text-sm text-dark/70 break-all">ikun20070426@qq.com</p>
+                    </a>
+                    <a href="tel:18907304393" class="p-6 bg-neutral rounded-2xl hover:shadow-lg transition-all tilt-card block">
+                        <i class="fas fa-phone text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">电话</h4>
+                        <p class="text-sm text-dark/70">189-0730-4393</p>
+                    </a>
+                    <button id="wechatBtn" type="button" class="p-6 bg-neutral rounded-2xl hover:shadow-lg transition-all tilt-card block w-full cursor-pointer">
+                        <i class="fab fa-weixin text-primary text-3xl mb-4"></i>
+                        <h4 class="font-bold mb-2">微信</h4>
+                        <p class="text-sm text-dark/70">sxq20070426 (点击复制)</p>
+                    </button>
+                </div>
+
+                <!-- 留言表单 -->
+                <form id="contactForm" class="mt-10 bg-neutral p-6 md:p-8 rounded-2xl space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="formName">您的称呼</label>
+                        <input type="text" id="formName" required="" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="formContact">联系方式 (邮箱/微信)</label>
+                        <input type="text" id="formContact" required="" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-all">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2" for="formMsg">想对我说</label>
+                        <textarea id="formMsg" rows="3" required="" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/30 outline-none transition-all resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white py-3 rounded-xl hover:bg-primary/90 transition-all hover:shadow-lg flex items-center justify-center gap-2">
+                        <i class="fas fa-paper-plane"></i>发送留言
+                    </button>
+                    <p id="formTip" class="text-sm text-center text-dark/70 hidden"></p>
+                </form>
+
+                <div class="mt-10 text-center">
+                    <p class="mb-6">期待与你合作，一起创造精彩的内容！</p>
+                    <div class="flex justify-center gap-4 md:gap-6">
+                        <button id="wechatIconBtn" type="button" class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110 cursor-pointer" aria-label="微信">
+                            <i class="fab fa-weixin"></i>
+                        </button>
+                        <a href="mailto:ikun20070426@qq.com" class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" aria-label="邮箱">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:18907304393" class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" aria-label="电话">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all hover:scale-110" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2026 苏小青. All rights reserved.</p>
+            <p class="mt-2 text-sm text-white/60">Made with <i class="fas fa-heart text-primary"></i> in Shanghai</p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部 -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg z-40 opacity-0 pointer-events-none transition-all hover:scale-110 flex items-center justify-center" aria-label="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // ===== 导航栏滚动效果 =====
+        const navbar = document.getElementById('navbar');
+        const scrollProgress = document.getElementById('scrollProgress');
+        const backToTop = document.getElementById('backToTop');
+
+        function onScroll() {
+            const scrolled = window.scrollY;
+            // 导航栏样式
+            if (scrolled > 50) {
+                navbar.classList.add('bg-white', 'shadow-md', 'py-2');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-md', 'py-2');
+                navbar.classList.add('py-4');
+            }
+            // 滚动进度条
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const percent = docHeight > 0 ? (scrolled / docHeight) * 100 : 0;
+            scrollProgress.style.width = percent + '%';
+            // 返回顶部
+            if (scrolled > 400) {
+                backToTop.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTop.classList.add('opacity-0', 'pointer-events-none');
+            }
+            // 滚动渐入
+            handleScrollAnimation();
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // ===== 返回顶部 =====
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== 移动端菜单 (带动画) =====
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = menuBtn.querySelector('i');
+
+        menuBtn.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            menuIcon.className = isOpen ? 'fas fa-times text-xl' : 'fas fa-bars text-xl';
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                menuIcon.className = 'fas fa-bars text-xl';
+            });
+        });
+
+        // ===== 平滑滚动 (考虑固定导航栏偏移) =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (!target) return;
+                e.preventDefault();
+                const offset = 80;
+                const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top, behavior: 'smooth' });
+            });
+        });
+
+        // ===== 滚动渐入动画 =====
+        const scrollElements = document.querySelectorAll('.scroll-hidden');
+        const elementInView = (el, offset = 100) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return elementTop <= ((window.innerHeight || document.documentElement.clientHeight) - offset);
+        };
+
+        function displayScrollElement(element) {
+            element.classList.add('animate-slide-up');
+            element.classList.remove('scroll-hidden');
+            // 触发技能条动画
+            if (element.querySelector('.skill-bar')) {
+                animateSkillBars(element);
+            }
+            // 触发数字计数
+            if (element.hasAttribute('data-count') || element.querySelector('[data-count]')) {
+                element.querySelectorAll('[data-count]').forEach(animateCount);
+            }
+        }
+
+        function handleScrollAnimation() {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 100) && el.classList.contains('scroll-hidden')) {
+                    displayScrollElement(el);
+                }
+            });
+        }
+        // 初始触发
+        handleScrollAnimation();
+
+        // ===== 打字机效果 =====
+        const typingTarget = document.getElementById('typingText');
+        const phrases = [
+            '新闻传播专业 | 内容创作者 | 综艺编导方向',
+            '热爱文娱 · 善于抓热点 · 懂流量思维',
+            '芒果TV《披荆斩棘的哥哥》实习组导演',
+            '期待与你一起创造精彩的内容！'
+        ];
+        let pIndex = 0, cIndex = 0, isDeleting = false;
+        function typeLoop() {
+            const current = phrases[pIndex];
+            if (!isDeleting) {
+                typingTarget.textContent = current.slice(0, ++cIndex);
+                if (cIndex === current.length) {
+                    isDeleting = true;
+                    setTimeout(typeLoop, 1800);
+                    return;
+                }
+            } else {
+                typingTarget.textContent = current.slice(0, --cIndex);
+                if (cIndex === 0) {
+                    isDeleting = false;
+                    pIndex = (pIndex + 1) % phrases.length;
+                }
+            }
+            setTimeout(typeLoop, isDeleting ? 40 : 90);
+        }
+        typeLoop();
+
+        // ===== 技能条动画 =====
+        function animateSkillBars(container) {
+            container.querySelectorAll('.skill-bar').forEach(bar => {
+                const width = parseInt(bar.getAttribute('data-width'), 10);
+                const fill = bar.querySelector('.bg-primary');
+                const percent = bar.querySelector('.skill-percent');
+                let cur = 0;
+                const timer = setInterval(() => {
+                    cur += 2;
+                    if (cur >= width) { cur = width; clearInterval(timer); }
+                    fill.style.width = cur + '%';
+                    percent.textContent = cur + '%';
+                }, 20);
+            });
+        }
+
+        // ===== 数字计数动画 =====
+        function animateCount(el) {
+            if (el.dataset.counted) return;
+            el.dataset.counted = '1';
+            const target = parseInt(el.getAttribute('data-count'), 10);
+            // 仅作展示用 - 此处我们用 award icon 上的小标记
+            // 当前 data-count 用于内部统计,不显示数字
+        }
+
+        // ===== 卡片3D倾斜 =====
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                if (window.innerWidth < 768) return; // 移动端不启用
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                const rotX = (-y / rect.height) * 6;
+                const rotY = (x / rect.width) * 6;
+                card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ===== 图片画廊 (支持左右切换/键盘/滑动) =====
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        const closeModal = document.getElementById('closeModal');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const imgCounter = document.getElementById('imgCounter');
+        const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+        let currentIndex = 0;
+
+        function openModal(index) {
+            currentIndex = index;
+            updateModalImage();
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.classList.add('no-scroll');
+        }
+        function updateModalImage() {
+            const img = galleryItems[currentIndex].querySelector('img');
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+            imgCounter.textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+        }
+        function closeModalFn() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('no-scroll');
+        }
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateModalImage();
+        }
+        function showNext() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateModalImage();
+        }
+
+        galleryItems.forEach((item, i) => {
+            item.querySelector('img').addEventListener('click', () => openModal(i));
+        });
+        closeModal.addEventListener('click', closeModalFn);
+        prevBtn.addEventListener('click', showPrev);
+        nextBtn.addEventListener('click', showNext);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModalFn(); });
+
+        // 键盘
+        window.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeModalFn();
+            if (e.key === 'ArrowLeft') showPrev();
+            if (e.key === 'ArrowRight') showNext();
+        });
+
+        // 触摸滑动
+        let touchStartX = 0;
+        modal.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        modal.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].screenX - touchStartX;
+            if (Math.abs(dx) > 50) {
+                if (dx > 0) showPrev(); else showNext();
+            }
+        }, { passive: true });
+
+        // ===== 主题切换 =====
+        const themeBtn = document.getElementById('themeBtn');
+        const themeIcon = themeBtn.querySelector('i');
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                document.documentElement.classList.add('dark');
+                themeIcon.className = 'fas fa-sun text-lg';
+            } else {
+                document.documentElement.classList.remove('dark');
+                themeIcon.className = 'fas fa-moon text-lg';
+            }
+        }
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        applyTheme(savedTheme);
+        themeBtn.addEventListener('click', () => {
+            const next = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+            applyTheme(next);
+            localStorage.setItem('theme', next);
+        });
+
+        // ===== 飘落爱心 =====
+        const heartsContainer = document.getElementById('heartsContainer');
+        const heartIcons = ['fa-heart', 'fa-heart', 'fa-star', 'fa-feather'];
+        function spawnHeart() {
+            const heart = document.createElement('i');
+            heart.className = 'falling-heart fas ' + heartIcons[Math.floor(Math.random() * heartIcons.length)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.color = ['#f080a0', '#ffb6c1', '#ff9eb5'][Math.floor(Math.random() * 3)];
+            heart.style.fontSize = (12 + Math.random() * 16) + 'px';
+            heart.style.animationDuration = (4 + Math.random() * 4) + 's';
+            heart.style.opacity = 0.5 + Math.random() * 0.4;
+            heartsContainer.appendChild(heart);
+            setTimeout(() => heart.remove(), 9000);
+        }
+        // 每800ms生成一个爱心
+        setInterval(spawnHeart, 800);
+
+        // ===== 留言表单 =====
+        const contactForm = document.getElementById('contactForm');
+        const formTip = document.getElementById('formTip');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('formName').value.trim();
+            const contact = document.getElementById('formContact').value.trim();
+            const msg = document.getElementById('formMsg').value.trim();
+            if (!name || !contact || !msg) {
+                formTip.textContent = '请填写完整信息哦~';
+                formTip.classList.remove('hidden');
+                formTip.style.color = '#e53e7a';
+                return;
+            }
+            // 模拟提交 (单文件版,实际部署可对接后端)
+            formTip.textContent = `谢谢 ${name}！留言已收到，我会尽快回复你~ 💕`;
+            formTip.classList.remove('hidden');
+            formTip.style.color = '#2e7d32';
+            contactForm.reset();
+            // 触发飘爱心庆祝
+            for (let i = 0; i < 6; i++) setTimeout(spawnHeart, i * 150);
+        });
+
+        // ===== 下载简历 (调用浏览器打印生成 PDF) =====
+        document.getElementById('downloadBtn').addEventListener('click', () => {
+            window.print();
+        });
+
+        // ===== 微信号点击复制 =====
+        const wechatId = 'sxq20070426';
+        function copyWechat(btn) {
+            const text = wechatId;
+            const done = () => showToast(`微信号已复制：${text}`, '#2e7d32');
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
+            } else {
+                fallbackCopy(text, done);
+            }
+        }
+        function fallbackCopy(text, cb) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); cb(); } catch (e) {}
+            document.body.removeChild(ta);
+        }
+        function showToast(msg, color) {
+            let tip = document.getElementById('copyToast');
+            if (!tip) {
+                tip = document.createElement('div');
+                tip.id = 'copyToast';
+                tip.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);background:#fff;padding:10px 18px;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.15);z-index:70;font-size:14px;opacity:0;transition:opacity 0.3s;pointer-events:none;';
+                document.body.appendChild(tip);
+            }
+            tip.textContent = msg;
+            tip.style.color = color || '#4a373e';
+            tip.style.opacity = '1';
+            clearTimeout(tip._t);
+            tip._t = setTimeout(() => { tip.style.opacity = '0'; }, 2000);
+        }
+        const wechatBtn = document.getElementById('wechatBtn');
+        if (wechatBtn) wechatBtn.addEventListener('click', () => copyWechat(wechatBtn));
+        const wechatIconBtn = document.getElementById('wechatIconBtn');
+        if (wechatIconBtn) wechatIconBtn.addEventListener('click', () => copyWechat(wechatIconBtn));
+
+        // ===== 防止移动端双击缩放 (提升体验) =====
+        let lastTouch = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = Date.now();
+            if (now - lastTouch <= 300) e.preventDefault();
+            lastTouch = now;
+        }, { passive: false });
+    </script>
+
+
+</body></html>
